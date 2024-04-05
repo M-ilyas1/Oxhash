@@ -1,11 +1,11 @@
-import { Card, Header, HeroSection } from "./Components"
+import { Card, HeroSection } from "./Components"
 
 function App() {
   return (
     <div>
         {/* <Header /> */}
         <HeroSection />
-        {/* <Card /> */}
+        <Card imageOnLeft={true}/>
     </div>
   )
 }

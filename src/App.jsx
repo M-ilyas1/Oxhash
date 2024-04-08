@@ -1,7 +1,7 @@
 import frame1 from "./assets/videos/Frame 1.svg";
 import frame2 from "./assets/videos/Frame 2.png";
 import frame3 from "./assets/videos/Frame 3.png";
-import { Card, HeroSection } from "./Components";
+import { Card, HeroSection, MainCommunityCards } from "./Components";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         paragraph="The oxhash Collective is comprised of top web3 gaming thought leaders who are committed to shaping the mainstream adoption of a decentralized world. We understand web3 game development obstacles and offer fair distribution through our transparent governance model. "
         imageOnLeft={true}
       />
+      <MainCommunityCards />
     </div>
   );
 }

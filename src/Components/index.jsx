@@ -3,4 +3,5 @@ export {default as HeroSection} from "./HeroSection/HeroSection";
 export {default as Card} from "./Card/Card";
 export {default as CommunityCards} from "./Card/CommunityCards";
 export {default as MainCommunityCards} from './Card/MainCommunityCards'
+export {default as Updates} from './Card/Updates'
 export {default as Button} from './Button/Button';

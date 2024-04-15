@@ -1,7 +1,7 @@
 import frame1 from "./assets/videos/Frame 1.svg";
 import frame2 from "./assets/videos/Frame 2.png";
 import frame3 from "./assets/videos/Frame 3.png";
-import { Card, HeroSection, MainCommunityCards } from "./Components";
+import { Card, HeroSection, MainCommunityCards, Updates } from "./Components";
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
         imageOnLeft={true}
       />
       <MainCommunityCards />
+      <Updates />
+
     </div>
   );
 }

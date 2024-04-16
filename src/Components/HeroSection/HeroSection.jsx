@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 function HeroSection() {
   return (
     <div
-      className="w-full max-w-[1920px] flex flex-col justify-center items-center py-5"
+      className="w-full max-w-[1920px] flex flex-col justify-center items-center"
       id="HeroSection"
     >
       <Header />

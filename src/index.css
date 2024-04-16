@@ -9,3 +9,15 @@
     background-size: cover;
     background-position: center;
 }
+.clients{
+    background-image: url(./assets/images/clients.png);
+    background-size: 100% 100%;
+}
+.empower{
+    background-image: url(./assets/images/empower.png);
+    background-size: 100% 100%;
+}
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.66)), url(./assets/images/footer.jpg);
+    background-size: 100% 100%;
+}

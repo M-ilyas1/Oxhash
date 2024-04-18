@@ -1,4 +1,12 @@
-import { Card, ClientsCards, EmpowerCard, Footer, HeroSection, MainCommunityCards, Updates } from "../Components";
+import {
+  Card,
+  ClientsCards,
+  EmpowerCard,
+  Footer,
+  HeroSection,
+  MainCommunityCards,
+  Updates,
+} from "../Components";
 import frame1 from "../assets/videos/Frame 1.svg";
 import frame2 from "../assets/videos/Frame 2.png";
 import frame3 from "../assets/videos/Frame 3.png";
@@ -28,7 +36,7 @@ function Home() {
       <EmpowerCard />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -5,6 +5,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 
+import { Link } from "react-router-dom";
+
 
 function Header() {
   let [toggle, setToggle] = useState(true)
@@ -48,8 +50,8 @@ function Header() {
         </div>
         <div>
           <ul className={`${toggle ? "grid grid-cols-1 lg:grid-cols-5 gap-4 items-center gap-x-10 text-white lg:ml-0 lg:mt-0 mt-5 ml-6": "hidden text-white"}`}>
-            {navLinks.map(({value}, index) => {
-              return <li key={index} className="flex items-center text-[15px] font-bold">{value}<IoMdArrowDropdown/></li>;
+            {navLinks.map(({value, link}, index) => {
+              return <a href={link} key={index} className="flex items-center text-[15px] font-bold">{value}<IoMdArrowDropdown/></a>;
             })}
           </ul>
           <button onClick={toggler} className="text-white absolute top-8 right-10 lg:hidden">{toggle ? <IoCloseSharp /> : <GiHamburgerMenu />}</button>

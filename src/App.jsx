@@ -1,10 +1,9 @@
-import {Home} from './Pages';
-
+import { Home } from "./Pages";
 
 function App() {
   return (
     <div className="bg-black">
-        <Home />
+      <Home />
     </div>
   );
 }

@@ -1,13 +1,14 @@
-import EcosystemAll from "./Pages/EcosystemAll";
-// import { Home } from "./Pages";
+// import EcosystemAll from "./Pages/EcosystemAll";
+import { Home } from "./Pages";
 
 function App() {
   return (
     <div className="bg-black">
-      {/* <Home /> */}
-      <EcosystemAll />
+      <Home />
+      {/* <EcosystemAll /> */}
     </div>
   );
 }
 
 export default App;
+

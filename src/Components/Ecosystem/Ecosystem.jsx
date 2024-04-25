@@ -8,9 +8,9 @@ import { useState } from "react";
 function Ecosystem() {
     let [tabs, setTabs] = useState(0)
 
-    function handleTabs() {
-        setTabs(0)
-    }
+    // function handleTabs() {
+    //     setTabs(0)
+    // }
   return (
     <div
       className="w-full max-w-[1920px] flex flex-col justify-center items-center"
@@ -24,22 +24,22 @@ function Ecosystem() {
           <div className="flex md:justify-end justify-start">
             <ul className="flex justify-end gap-5 text-[20px]">
               <li>
-                <button onClick={() => {tabs === 0}} className="text-[20px] hover:text-[#ffffff9f]">
+                <button onClick={() => setTabs(0)} className="text-[20px] hover:text-[#ffffff9f]">
                   All
                 </button>
               </li>
               <li>
-                <button onClick={() => {tabs === 1}} className="text-[20px] hover:text-[#ffffff9f]">
+                <button onClick={() =>  setTabs(1)} className="text-[20px] hover:text-[#ffffff9f]">
                   Game
                 </button>
               </li>
               <li>
-                <button onClick={() => {tabs === 2}} className="text-[20px] hover:text-[#ffffff9f]">
+                <button onClick={() =>  setTabs(2)} className="text-[20px] hover:text-[#ffffff9f]">
                   Grow Tools
                 </button>
               </li>
               <li>
-              <button onClick={() => {tabs === 3}} className="text-[20px] hover:text-[#ffffff9f]">
+              <button className="text-[20px] hover:text-[#ffffff9f]">
                     Oops
               </button>
               </li>
@@ -138,7 +138,7 @@ function Ecosystem() {
                 />
               </div>
             </div>
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
               <div>
                 <CommunityCards
                   image={Players2}

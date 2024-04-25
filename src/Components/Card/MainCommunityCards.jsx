@@ -1,6 +1,7 @@
 import CommunityCards from "./CommunityCards";
-import Card1 from "../../assets/images/card1 (1).jpeg";
-import Card2 from "../../assets/images/card1 (6).jpeg";
+import Card1 from "../../assets/images/Players (1).jpeg";
+import Card2 from "../../assets/images/Players (2).jpeg";
+import Card3 from "../../assets/images/Players (3).jpeg";
 
 import GroupImage from "../../assets/images/Group 3.png";
 
@@ -12,6 +13,13 @@ function MainCommunityCards() {
         </h1>
       <div className="md:w-[90%] w-[90%] grid grid-cols-1 md:grid-cols-3 gap-10 my-14">
         <CommunityCards
+          image={Card3}
+          playerImages={GroupImage}
+          gameName="Skyborne"
+          gamelink="ToomuchLag"
+          gamePrice="242eth"
+        />
+        <CommunityCards
           image={Card1}
           playerImages={GroupImage}
           gameName="Skyborne"
@@ -20,13 +28,6 @@ function MainCommunityCards() {
         />
         <CommunityCards
           image={Card2}
-          playerImages={GroupImage}
-          gameName="Skyborne"
-          gamelink="ToomuchLag"
-          gamePrice="242eth"
-        />
-        <CommunityCards
-          image={Card1}
           playerImages={GroupImage}
           gameName="Skyborne"
           gamelink="ToomuchLag"
@@ -36,13 +37,6 @@ function MainCommunityCards() {
 
       <div className="md:w-[90%] w-[90%] grid grid-cols-1 md:grid-cols-3 gap-10">
         <CommunityCards
-          image={Card1}
-          playerImages={GroupImage}
-          gameName="Skyborne"
-          gamelink="ToomuchLag"
-          gamePrice="242eth"
-        />
-        <CommunityCards
           image={Card2}
           playerImages={GroupImage}
           gameName="Skyborne"
@@ -51,6 +45,13 @@ function MainCommunityCards() {
         />
         <CommunityCards
           image={Card1}
+          playerImages={GroupImage}
+          gameName="Skyborne"
+          gamelink="ToomuchLag"
+          gamePrice="242eth"
+        />
+        <CommunityCards
+          image={Card3}
           playerImages={GroupImage}
           gameName="Skyborne"
           gamelink="ToomuchLag"

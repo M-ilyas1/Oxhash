@@ -21,3 +21,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.66)), url(./assets/images/footer.jpg);
     background-size: 100% 100%;
 }
+.glassMorfizam{
+    background-image: url(./assets//images/Display.png);
+    background-size: 100% 100%;
+}

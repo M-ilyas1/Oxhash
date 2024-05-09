@@ -24,12 +24,12 @@ function Header() {
     {
       id: 2,
       value: "Learn",
-      link: "/Learn",
+      link: "/",
     },
     {
       id: 3,
       value: "Build",
-      link: "/Build",
+      link: "/",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ function Header() {
     {
       id: 5,
       value: "Community",
-      link: "/Community",
+      link: "/",
     },
   ];
   return (
@@ -51,10 +51,12 @@ function Header() {
         <div>
           <ul className={`${toggle ? "grid grid-cols-1 lg:grid-cols-5 gap-4 items-center gap-x-10 text-white lg:ml-0 lg:mt-0 mt-5 ml-6": "hidden text-white"}`}>
             {navLinks.map(({value, link}, index) => {
-              return <a href={link} key={index} className="flex items-center text-[15px] font-bold">{value}<IoMdArrowDropdown/></a>;
+              return <Link to={link} key={index} className="flex items-center text-[15px] font-bold">{value}<IoMdArrowDropdown/></Link>;
             })}
           </ul>
-          <button onClick={toggler} className="text-white absolute top-8 right-10 lg:hidden">{toggle ? <IoCloseSharp /> : <GiHamburgerMenu />}</button>
+          <button onClick={toggler} className="text-white absolute top-8 right-10 lg:hidden">
+          {toggle ? <IoCloseSharp /> : <GiHamburgerMenu />}
+          </button>
         </div>
       </div>
     </div>
